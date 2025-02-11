@@ -17,7 +17,7 @@
 {{--                <li><a class="nav-link scrollto" href="{{route('frontend.team')}}">Our Team</a></li>--}}
                 <li><a class="getstarted scrollto" href="{{route('frontend.contact.us')}}">Contact</a></li>
 {{--                <li><a class="getstarted scrollto" href="{{route('frontend.pricing')}}">Training Program </a></li>--}}
-{{--                <li><a class="getstarted scrollto btn " style="background: #e50031" href="{{route('login')}}">Staff Login </a></li>--}}
+                <li><a class="getstarted scrollto btn " style="background: #fb2628" href="https://tobilam.co.rw:2096/" target="_blank">Webmail </a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
