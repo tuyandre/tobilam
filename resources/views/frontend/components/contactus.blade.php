@@ -102,7 +102,7 @@
                     </div>
                     <div class="form-group">
                         <label for="name">Message</label>
-                        <textarea class="form-control @error('message') is-invalid @enderror" name="message" rows="10" required></textarea>
+                        <textarea class="form-control @error('message') is-invalid @enderror" name="message" rows="5" required></textarea>
 
                         @error('message')
                         <span class="invalid-feedback" role="alert">

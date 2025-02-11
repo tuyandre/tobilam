@@ -69,13 +69,23 @@ class ContactUsController extends Controller
             'message' => 'required',
         ]);
 
-        $contact_us = new ContactUs();
-        $contact_us->full_name = $request->full_name;
-        $contact_us->telephone = $request->telephone;
-        $contact_us->email = $request->email;
-        $contact_us->subject = $request->subject;
-        $contact_us->message = $request->message;
-        $contact_us->save();
+        try {
+            $details = [
+                'message_body' => "Dear Sir / Madam,\n My name is " . $request->full_name .
+                    " and my email is " . $request->email .
+                    " and my telephone is " . $request->telephone .
+                    ".\n I am writing this email because: " . $request->message
+            ];
+            \Mail::send('emails.admin_registration', $details, function ($message) use ($request) {
+                $message->to("info@tobilam.co.rw", "TOBILAM LTD")->subject($request->subject);
+                $message->from('' . env('MAIL_FROM_ADDRESS') . '', env('MAIL_FROM_NAME'));
+            });
+
+        } catch (\Exception $e) {
+            // Handle the error here
+            \Log::error('Error sending email: ' . $e->getMessage());
+            // You can add additional error handling logic as needed, such as logging the error or sending a notification
+        }
 
         return redirect()->back()->with('success', 'Your message has been sent successfully.');
     }

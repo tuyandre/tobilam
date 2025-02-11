@@ -84,6 +84,8 @@
                         <li><i class="ri-check-double-line"></i>Intuit Quickbooks Premier</li>
                         <li><i class="ri-check-double-line"></i>Online Quickbooks</li>
                     </ul>
+
+                    <p>For more detail and Price discussion please Contactus <a class="btn btn info" style="background: #fb2628; border-radius: 30px;margin: 0 10px"  href="{{route('frontend.contact.us')}}"> Contact Us</a> </p>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
