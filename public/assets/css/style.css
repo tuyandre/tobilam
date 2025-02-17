@@ -238,7 +238,8 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #42a4d1;
+    color: white;
+    background: #42a4d1;
 }
 
 .navbar .dropdown:hover>ul {
@@ -254,7 +255,7 @@ h6 {
 }
 
 .navbar .dropdown .dropdown:hover>ul {
-  opacity: 1;
+  opacity: 0.5;
   top: 0;
   left: 100%;
   visibility: visible;

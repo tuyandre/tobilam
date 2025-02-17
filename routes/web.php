@@ -28,6 +28,14 @@ Route::get('/our_teams', [App\Http\Controllers\FrontRegistrationController::clas
 Route::get('/about_us', [App\Http\Controllers\FrontRegistrationController::class, 'frontAboutUs'])->name('frontend.about.us');
 Route::get('/trending/read-more', [App\Http\Controllers\FrontRegistrationController::class, 'trendingDetail'])->name('frontend.trending.detail');
 
+Route::get('/services/accounting-services', [App\Http\Controllers\ContactUsController::class, 'accountingServices'])->name('services.accounting_services');
+Route::get('/services/accounting-software', [App\Http\Controllers\ContactUsController::class, 'accountingSoftware'])->name('services.accounting_software');
+Route::get('/services/coaching', [App\Http\Controllers\ContactUsController::class, 'coaching'])->name('services.coaching');
+Route::get('/services/strategic-plan', [App\Http\Controllers\ContactUsController::class, 'strategicPlan'])->name('services.strategic_plan');
+Route::get('/services/business-plan', [App\Http\Controllers\ContactUsController::class, 'businessPlan'])->name('services.business_plan');
+Route::get('/services/tax-and-declaration', [App\Http\Controllers\ContactUsController::class, 'taxDeclaration'])->name('services.tax_declaration');
+Route::get('/services/business-registration-and-deregistration', [App\Http\Controllers\ContactUsController::class, 'businessRegistration'])->name('services.business_registration');
+//Route::get('/services/website-development', [App\Http\Controllers\ContactUsController::class, 'we'])->name('services.contact.us');
 //registration page
 Route::get('/registration', [App\Http\Controllers\FrontRegistrationController::class, 'registration_training'])->name('frontend.registration.training');
 //store registration form data

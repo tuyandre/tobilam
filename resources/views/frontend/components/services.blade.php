@@ -27,7 +27,7 @@
             <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                 <div class="icon-box">
                     <div class="icon"><i class="bx bx-file"></i></div>
-                    <h4><a href="">Business Registration & Deregistration</a></h4>
+                    <h4><a href="">Business Registration & De-Registration</a></h4>
                     <p>
                         As official agent of Rwanda Development Board, we advise you how you can open a business in Rwanda, make an amendment on your existing company, close your business and make your business dormant. We are specialized in submitting annual return as prescribed by The Rwandan company law.<br>
                         We advise you which name suits to your business, appropriate activities you can incorporate in your business and other taxations skills related to Companies in Rwanda. we help you also to get an investment certificate which enable your business to obtain business incentives and exemptions.
@@ -74,7 +74,7 @@
             <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
                 <div class="icon-box">
                     <div class="icon"><i class="bx bx-layer"></i></div>
-                    <h4><a href="">Accounting Softwares</a></h4>
+                    <h4><a href="">Accounting Software</a></h4>
                     <p>We are official reseller of:<br>
                     </p>
                     <ul type="none">

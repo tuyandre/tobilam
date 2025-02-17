@@ -43,14 +43,14 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Accounting Service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Business Registration & Deregistration</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Tax and Declaration</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Coaching</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Accounting Softwares</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Strategic Plan</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Business Plan</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Website & Database development</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('services.accounting_services')}}">Accounting Service</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('services.business_registration')}}">Business Registration & Deregistration</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('services.tax_declaration')}}">Tax and Declaration</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('services.coaching')}}">Coaching</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('services.accounting_software')}}">Accounting Software</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('services.strategic_plan')}}">Strategic Plan</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('services.business_plan')}}">Business Plan</a></li>
+{{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Website & Database development</a></li>--}}
                     </ul>
                 </div>
 

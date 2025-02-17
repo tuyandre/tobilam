@@ -99,4 +99,32 @@ class ContactUsController extends Controller
 
         return redirect()->back()->with('success', 'Your message has been sent successfully.');
     }
+    public function accountingServices()
+    {
+        return view('frontend.services.accounting_service');
+    }
+    public function accountingSoftware()
+    {
+        return view('frontend.services.accounting_software');
+    }
+    public function coaching()
+    {
+        return view('frontend.services.coaching');
+    }
+    public function strategicPlan()
+    {
+        return view('frontend.services.strategic_plan');
+    }
+    public function businessPlan()
+    {
+        return view('frontend.services.business_plan');
+    }
+    public function taxDeclaration()
+    {
+        return view('frontend.services.tax_declaration');
+    }
+    public function businessRegistration()
+    {
+        return view('frontend.services.business_registration');
+    }
 }
