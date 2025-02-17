@@ -61,23 +61,33 @@ class ContactUsController extends Controller
     //save contact us form data
     public function saveContactUs(Request $request)
     {
+        \Log::info('Contact us form data: ' . json_encode($request->all()));
         $request->validate([
             'full_name' => 'required',
             'telephone' => 'required',
             'email' => 'required|email',
             'subject' => 'required',
+            'reason' => 'required|array',
             'message' => 'required',
         ]);
 
+        $selected_reason = $request->reason;
+        $reason = '<ol>';
+        foreach ($selected_reason as $key => $value) {
+            $reason .= '<li>' . $value . '</li>';
+        }
+        $reason .= '</ol>';
+
         try {
             $details = [
-                'message_body' => "Dear Sir / Madam,\n My name is " . $request->full_name .
+                'message_body' => "Dear Sir / Madam,<br> My name is " . $request->full_name .
                     " and my email is " . $request->email .
-                    " and my telephone is " . $request->telephone .
-                    ".\n I am writing this email because: " . $request->message
+                    " and my telephone is " . $request->telephone ."<br><b> Selected reason:</b> " . $reason .
+                    ".<br> I am writing this email because: " . $request->message
             ];
             \Mail::send('emails.admin_registration', $details, function ($message) use ($request) {
-                $message->to("info@tobilam.co.rw", "TOBILAM LTD")->subject($request->subject);
+                $message->to("info@tobilam.co.rw", "TOBILAM LTD")->subject(str_replace('{Disarmed}', '', $request->subject));
+//                $message->to("tuyandre@tobilam.co.rw", "TOBILAM LTD")->subject($request->subject);
                 $message->from('' . env('MAIL_FROM_ADDRESS') . '', env('MAIL_FROM_NAME'));
             });
 

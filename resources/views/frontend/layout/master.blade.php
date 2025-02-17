@@ -93,7 +93,8 @@ $ROOT_FOLDER =$main_url.VariableConstants::ROOT_FOLDER;
 <script>
     $(document).ready(function() {
         $('.select2').select2({
-            closeOnSelect: false
+            closeOnSelect: false,
+            placeholder: "Select an option",
         });
     });
     $(document).ready(function () {
@@ -115,6 +116,14 @@ $ROOT_FOLDER =$main_url.VariableConstants::ROOT_FOLDER;
                     required: true,
                     minlength: 3,
                     maxlength: 50,
+                },
+                reason :{
+                    required: true,
+                },
+                telephone: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 10,
                 },
                 message: {
                     required: true,
@@ -138,6 +147,14 @@ $ROOT_FOLDER =$main_url.VariableConstants::ROOT_FOLDER;
                     required: "Please enter your subject",
                     minlength: "Your subject must be at least 3 characters long",
                     maxlength: "Your subject must be at least 50 characters long",
+                },
+                telephone: {
+                    required: "Please enter your telephone",
+                    minlength: "Your telephone must be at least 10 characters long",
+                    maxlength: "Your telephone must be at least 10 characters long",
+                },
+                'reason[]': {
+                    required: "Please select at least one reason",
                 },
                 message: {
                     required: "Please enter your message",
